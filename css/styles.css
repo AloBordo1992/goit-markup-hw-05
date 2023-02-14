@@ -572,8 +572,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1440px;
-  height: 676px;
+  width: 100%;
+  height: 100%;
   background: rgba(46, 47, 66, 0.4);
 }
 .backdrop.is-hidden {
@@ -586,8 +586,9 @@ header {
 }
 .modal {
   position: absolute;
-  top: calc(50% - 275px);
-  left: calc(50% - 225px);
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   width: 408px;
   min-height: 576px;
   background-color: #fcfcfc;
