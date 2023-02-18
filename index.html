@@ -66,6 +66,51 @@
                   <use href="./image/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <strong class="modal-title"
+                >Leave your contacts and we will call you back</strong
+              >
+              <form name="modal_form" autocomplete="on" novalidate>
+                <!--форма запису без використання id -->
+                <div class="input">
+                  <label class="modal-form-label">
+                    Name
+                    <input class="form-inpud" type="nam" name="name" />
+                    <scg class="modal-form-icon" width="20" height="20">
+                      <use href="./image/icons.svg#user-name"></use
+                    ></scg>
+                  </label>
+                  <label class="modal-form-label">
+                    Email
+                    <input class="form-inpud" type="email" name="email" />
+                    <scg class="modal-form-icon" width="20" height="20">
+                      <use href="./image/icons.svg#user-email"></use
+                    ></scg>
+                  </label>
+                  <label class="modal-form-label">
+                    Phone number
+                    <input class="form-inpud" name="phone_number" type="tel" />
+                    <scg class="modal-form-icon" width="20" height="20">
+                      <use href="./image/icons.svg#user-phone"></use
+                    ></scg>
+                  </label>
+                  <label class="modal-form-label">
+                    Comment
+                    <textarea class="form-text"
+                      name="comment"
+                      rows="5"
+                      placeholder="Text input"
+                    ></textarea>
+                  </label>
+                </div>
+                <label class="label-box">
+                  <input type="checkbox" name="hobby" value="music" checked />
+                  <scg class="modal-form-icon" width="20" height="20">
+                    <use href=""></use
+                  ></scg>
+                  I accept the terms and conditions of the <a>Privacy Policy</a>
+                </label>
+                <button class="button-submit" type="submit">Submit</button>
+              </form>
             </div>
           </div>
         </div>
@@ -460,6 +505,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscrible-wrapper">
+          <b class="text-form-footer">Subscribe</b>
+          <form class="form-footer">
+            <label class="footer-form-label">
+              <input
+                class="footer-form-field"
+                type="email"
+                placeholder="E-mail"
+                name="subscrible-email"
+                required
+              />
+            </label>
+            <button class="button-footer" type="submit">
+              Subscribe
+              <svg class="subscrible-icon" width="24" height="20">
+                <use href="./image/icons.svg#plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
