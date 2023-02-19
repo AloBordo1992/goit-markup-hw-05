@@ -54,7 +54,8 @@
       <section class="hero">
         <div class="fon-hero">
           <h1 class="hero-title">
-            Effective Solutions <br />for Your Business
+            Effective Solutions <br />
+            for Your Business
           </h1>
           <button type="button" data-modal-open class="button-stile">
             Order Servise
@@ -69,47 +70,79 @@
               <strong class="modal-title"
                 >Leave your contacts and we will call you back</strong
               >
+
               <form name="modal_form" autocomplete="on" novalidate>
-                <!--форма запису без використання id -->
-                <div class="input">
-                  <label class="modal-form-label">
-                    Name
-                    <input class="form-inpud" type="nam" name="name" />
-                    <scg class="modal-form-icon" width="20" height="20">
-                      <use href="./image/icons.svg#user-name"></use
-                    ></scg>
-                  </label>
-                  <label class="modal-form-label">
-                    Email
-                    <input class="form-inpud" type="email" name="email" />
-                    <scg class="modal-form-icon" width="20" height="20">
-                      <use href="./image/icons.svg#user-email"></use
-                    ></scg>
-                  </label>
-                  <label class="modal-form-label">
-                    Phone number
-                    <input class="form-inpud" name="phone_number" type="tel" />
-                    <scg class="modal-form-icon" width="20" height="20">
-                      <use href="./image/icons.svg#user-phone"></use
-                    ></scg>
-                  </label>
-                  <label class="modal-form-label">
-                    Comment
-                    <textarea class="form-text"
-                      name="comment"
-                      rows="5"
-                      placeholder="Text input"
-                    ></textarea>
-                  </label>
+                <!-- Name field -->
+                <label class="modal-form-label" name="user_name" for="user_sign"
+                  >Name</label
+                >
+                <div class="modal-form-group">
+                  <input
+                    class="modal-form-input"
+                    type="text"
+                    id="user_sign"
+                    required
+                  />
+                  <svg class="modal-form-icon" width="18" height="24">
+                    <use href="./images/icons.svg#user-name"></use>
+                  </svg>
                 </div>
-                <label class="label-box">
-                  <input type="checkbox" name="hobby" value="music" checked />
-                  <scg class="modal-form-icon" width="20" height="20">
-                    <use href=""></use
-                  ></scg>
-                  I accept the terms and conditions of the <a>Privacy Policy</a>
-                </label>
-                <button class="button-submit" type="submit">Submit</button>
+                <!-- Phone field -->
+                <label class="modal-form-label" for="user_telephone"
+                  >Phone</label
+                >
+                <div class="modal-form-group">
+                  <input
+                    class="modal-form-input"
+                    type="tel"
+                    id="user_telephone"
+                    required
+                  />
+                  <svg class="modal-form-icon" width="18" height="24">
+                    <use href="./images/icons.svg#user-phone"></use>
+                  </svg>
+                </div>
+                <!-- Email field -->
+                <label class="modal-form-label" for="user_email">Email</label>
+                <div class="modal-form-group">
+                  <input
+                    class="modal-form-input"
+                    type="email"
+                    id="user_email"
+                    required
+                  />
+                  <svg class="modal-form-icon" width="18" height="24">
+                    <use href="./images/icons.svg#user-email"></use>
+                  </svg>
+                </div>
+                <!-- Comment field -->
+                <label class="modal-form-label" for="user_comment"
+                  >Comment</label
+                >
+                <textarea
+                  class="modal-form-comment"
+                  name="user_comment"
+                  id="user_comment"
+                  rows="6"
+                  placeholder="Type your comment..."
+                ></textarea>
+                <!-- Checkbox field -->
+                <div class="form-checkbox">
+                  <input
+                    class="form-checkbox-input"
+                    type="checkbox"
+                    name="user_checkbox"
+                    id="user_checkbox"
+                    required
+                  />
+                  <label class="form-checkbox-label" for="user_checkbox"
+                    >I accept the terms and conditions of the
+                    <a class="modal-form-link link" href="" target="_blank"
+                      >Privacy Policy</a
+                    ></label
+                  >
+                </div>
+                <button class="contact-form-btn btn" type="submit">Send</button>
               </form>
             </div>
           </div>
