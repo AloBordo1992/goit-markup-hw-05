@@ -819,7 +819,7 @@ header {
 }
 .form-checkbox-input:checked + .form-checkbox-label::before {
   background-color: #4d5ae5;
-  background-image: url(../images/checkbox.svg);
+  background-image: url(../image/checkbox.svg);
   border-color: #4d5ae5;
   background-repeat: no-repeat;
   background-size: 100%;
